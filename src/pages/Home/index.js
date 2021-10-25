@@ -9,7 +9,7 @@ const Home = (props) => {
   return (
     <div>
       <Top>
-        <span>WebApp</span>
+        <span>downzoo-music</span>
       </Top>
       <Tab>
         <NavLink to="/recommend" activeClassName="selected"><TabItem><span>推荐</span></TabItem></NavLink>

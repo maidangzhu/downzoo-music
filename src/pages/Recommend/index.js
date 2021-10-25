@@ -17,10 +17,10 @@ const Recommend = (props) => {
   useEffect(() => {
     // 如果页面有数据，则不发请求
     //immutable 数据结构中长度属性 size
-    if (!bannerList.size) {
+    if (!bannerList?.size) {
       getBannerDataDispatch();
     }
-    if (!recommendList.size) {
+    if (!recommendList?.size) {
       getRecommendListDataDispatch();
     }
   }, [bannerList.size, recommendList.size, getBannerDataDispatch, getRecommendListDataDispatch]);

@@ -13,5 +13,5 @@ export const getHotSingerListRequest = (count) => {
 }
 
 export const getSingerListRequest = (category, alpha, count) => {
-  return networkService.get(`/artist/list?cat=${category}&initial=${alpha.toLowerCase()}&offset=${count}`);
+  return networkService.get(`/artist/list?cat=${category}&initial=${alpha?.toLowerCase() || ''}&offset=${count}`);
 }
